@@ -15,10 +15,11 @@ def main():
         print(f"Error: {e}")
 
     try:
+        # calling a rust function that called python function
         print(newbee.call_python_function(6))
     except Exception as e:
         print(f"Error: {e}")
 
-
+ 
 if __name__ == "__main__":
     main()
